@@ -1,3 +1,4 @@
+
 body {
     background: #000;
     font-family: 'Muli', sans-serif;
@@ -5,21 +6,22 @@ body {
 } 
 
 /* Estilos Splash */
-
+/*
 #splash {
   background-color: red;
   height: 100vh;
 
 }
 
-/* El main se pone como display none para que oculte el contenido pero lo muestre cuando termine el splash */
+/* El main se pone como display none para que oculte el contenido pero lo muestre cuando termine el splash 
 
 #mainview {
 	display: none;
 }
-
+*/
 
 .container {
 	width: 100%;
 	max-width:initial;
 }
+
