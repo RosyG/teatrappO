@@ -1,4 +1,3 @@
-
 # **Te AtrappO**
 by  ** *Equipo Cinco* **
 
@@ -32,3 +31,4 @@ En base a investigación e información pudimos percatarnos que hay poca afluenc
 [Repositorio en Github - TeatrappO](https://github.com/RosyG/teatrappO "Repositorio en Github - TeatrappO").
 
 ![Organización](assets/images/organizacion.jpg)
+
