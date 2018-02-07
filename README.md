@@ -1,4 +1,3 @@
-
 # **Te AtrappO**
 by  ** *Equipo Cinco* **
 
@@ -14,8 +13,6 @@ En base a investigación e información pudimos percatarnos que hay poca afluenc
 * Planeación mediante alcance de tareas pequeñas e investigación.
 * Creación de maquetado.
 * Creación de pequeñas funciones.
-
-![Organización](assets/images/app.png)
 
 ### Nuestra organización
 
@@ -34,3 +31,4 @@ En base a investigación e información pudimos percatarnos que hay poca afluenc
 [Repositorio en Github - TeatrappO](https://github.com/RosyG/teatrappO "Repositorio en Github - TeatrappO").
 
 ![Organización](assets/images/organizacion.jpg)
+
