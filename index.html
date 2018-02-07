@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teatrappo</title>
+<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+ <!-- <main id="splash">
+    <section class="row">
+       <div class="col sm 12">
+         <img src="assets/images/teatro" alt="">
+       </div>
+    </section>
+  </main>
+-->
+<!-- Inicia Navbar -->
+<main id="mainview">
+      <section class="container-fluid">
+        <div class="row">
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+
+    <nav>
+      <div class="nav-wrapper red darken-4">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Inicio</a></li>
+          <li><a href="badges.html">Lorem</a></li>
+          <li><a href="collapsible.html">Usuario</a></li>
+          <li><a href="mobile.html">Contacto</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Inicio</a></li>
+          <li><a href="badges.html">Lorem</a></li>
+          <li><a href="collapsible.html">Perfil</a></li>
+          <li><a href="mobile.html">Contacto</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<!-- Sección del primer slider en full-screen -->
+<div class="container">
+      <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Lorem!</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Sección de la seleccion de obras de teatro -->
+
+  <div class="container">
+    <div class="row">
+      <div class="carousel">
+        <a class="carousel-item modal-trigger" href="#info-obra"><img src="http://dummyimage.com/250x250"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
+    </div>
+  </div>
+</div>
+          
+
+
+<!-- Modal para calificar obras y agregar comentarios 
+  <a class="waves-effect waves-light modal-trigger" href="#modal1"></a>
+
+  <!-- Estructura intenrna del modal de usuario 
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Hola @usuario!</h4>
+      <ul class = "collapsible" data-collapsible = "accordion">
+         <li>
+            <div class = "collapsible-header">
+               <i class = "material-icons">star</i>Califica</div>
+            <div class = "collapsible-body"><p>
+               <form action="#">
+                  <p class="range-field">
+                    <input type="range" id="test5" min="0" max="100" />
+                  </p>
+                </form>
+            </p></div>
+         </li>
+         
+         <li>
+            <div class = "collapsible-header">
+               <i class = "material-icons">short_text</i>Escribe tu reseña</div>
+            <div class = "collapsible-body"><p>
+               <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Cómo fue tu experiencia</label>
+                      </div>
+                      <div class="row right">
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </p></div>
+         </li>
+      </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div> -->
+  
+  <!--Imagen de prueba-->
+  <span class="modal-trigger modal-close" data-toggle="modal" href="#modal1">
+  </span>
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+  <!-- Modal Structure -->
+  <div id="info-obra" class="modal">
+    <div class="modal-content">
+      <div class="title">
+        <h4 class="center-align"><strong>Las Meninas</strong></h4>
+      </div>
+      <div class="map center-align">
+        <iframe class="col lx12 col s12 img-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7262150197555!2d-99.17019851189744!3d19.4165162640089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4709285507%3A0xbbb2cd252c5b4946!2sPizza+del+Perro+Negro!5e0!3m2!1ses-419!2smx!4v1516498361384"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <!--Dummy: Ranking starts-->
+      <div class="right-align">
+        <div class="ec-stars-wrapper">
+          <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+          <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+          <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+          <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+          <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+        </div>
+      </div>
+
+      <div class="left-align">
+        <p><strong>Género:</strong> Comedia</p>
+        <p><strong>Horario:</strong> Domingo 4 y 11, 13:30 y 17:30 horas; Jueves 8 y 15, 20:30 horas</p>
+        <p><strong>Precio:</strong> $250 - $350</p>
+      </div>
+    <!--Dummy: Reseñas-->
+      <div class="reseñas">
+        <h6><strong>Reseñas</strong></h6>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><hr>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><hr>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
