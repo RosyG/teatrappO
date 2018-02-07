@@ -15,6 +15,8 @@ En base a investigación e información pudimos percatarnos que hay poca afluenc
 * Creación de maquetado.
 * Creación de pequeñas funciones.
 
+![Organización](assets/images/app.png)
+
 ### Nuestra organización
 
 * *Lluvia de ideas* sobre qué podíamos hacer.  
