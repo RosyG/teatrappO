@@ -25,7 +25,7 @@ body {
 }
 
 .d-n {
-  display: none;
+  display: none; /*Aquí va en none*/
 }
 
 #d-b {
