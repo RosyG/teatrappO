@@ -1,4 +1,4 @@
-var teatros = [
+var theater = [
     {
 		"name": "Foro Shakespeare",
 		"img": "http://dummyimage.com/250x250",
@@ -52,7 +52,7 @@ var teatros = [
             lng: -99.1663782,
 		    lat: 19.357465
 		}
-	}
+	},
     {
         "name": "Centro Cultural Universitario",
         "img": "http://dummyimage.com/250x250",
@@ -61,7 +61,7 @@ var teatros = [
             lng: -99.1721293,
             lat: 19.4498291
         }
-    }
+    },
     {
         "name": "Julio Prieto",
         "img": "http://dummyimage.com/250x250",
@@ -70,7 +70,7 @@ var teatros = [
             lng: -99.1633715,
             lat: 19.3960374
         }
-    }
+    },
     {
         "name": "Foro de las Artes",
         "img": "http://dummyimage.com/250x250",
@@ -79,7 +79,7 @@ var teatros = [
             lng: -99.1429351,
             lat: 19.3564583
         }
-    }
+    },
      {
         "name": "Salvador Novo",
         "img": "http://dummyimage.com/250x250",
@@ -88,7 +88,7 @@ var teatros = [
             lng: -99.139786,
             lat: 19.360311
         }
-    }
+    },
      {
         "name": "Santa Catarina",
         "img": "http://dummyimage.com/250x250",
