@@ -1,6 +1,6 @@
  //Es un array de objetos que contiene la data de las obras de teatro
 var dataObras = [
-  var obras = {
+  'OBRA2' = {
     'Obra' : 'Barataria: Estado De México'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -10,7 +10,7 @@ var dataObras = [
     'Precio': '$259 - $370',
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA2' = {
     'Obra' : 'Solsticio de Invierno'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -20,7 +20,7 @@ var dataObras = [
     'Precio': '$150'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA3' = {
     'Obra' : 'Las Meninas'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -30,7 +30,7 @@ var dataObras = [
     'Precio': '$250 - $350'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA4' = {
     'Obra' : 'La Divina Ilusión'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -40,7 +40,7 @@ var dataObras = [
     'Precio': '$200 - $300'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA5' = {
     'Obra' : 'Las Cartas de Frida'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -50,7 +50,7 @@ var dataObras = [
     'Precio': '$200 - $300'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA6' = {
     'Obra' : 'EL juego que todos jugamos'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -60,7 +60,7 @@ var dataObras = [
     'Precio': '$385 - $500'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA7' = {
     'Obra' : 'Mujeres Poderosas. Ciclo de Monólogos'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -70,7 +70,7 @@ var dataObras = [
     'Precio': '$350'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA8' = {
     'Obra' : '50 sombras de Fer'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -80,7 +80,7 @@ var dataObras = [
     'Precio': '$250 (solo adultos)'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA9' = {
     'Obra' : 'Don Quijote y el titiritero'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -90,7 +90,7 @@ var dataObras = [
     'Precio': 'Gratis'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA10' = {
     'Obra' : 'Festival Internacional de Teatro Universitario (UNAM)'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -100,7 +100,7 @@ var dataObras = [
     'Precio': 'Gratis'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA11' = {
     'Obra' : 'Rotterdam'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -110,7 +110,7 @@ var dataObras = [
     'Precio': '$350'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA12' = {
     'Obra' : 'El Amor de las Luciernagas'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -120,7 +120,7 @@ var dataObras = [
     'Precio': '$250'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA13' = {
     'Obra' : 'El Corazón de la Materia'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -130,7 +130,7 @@ var dataObras = [
     'Precio': '$30 (solo los jueves) - $100'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA14' = {
     'Obra' : 'La Desconfianza'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -140,7 +140,7 @@ var dataObras = [
     'Precio': 'Gratis'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA15' = {
     'Obra' : 'El Automóvil Gris'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -150,7 +150,7 @@ var dataObras = [
     'Precio': '$30 (solo los jueves) - $100'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA16' = {
     'Obra' : 'No soy un Fracaso'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -160,7 +160,7 @@ var dataObras = [
     'Precio': '$30 (solo Miércoles 7) - $100'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA17' = {
     'Obra' : 'Quijote, vencedor de sí mismo'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -170,7 +170,7 @@ var dataObras = [
     'Precio': '$30 (solo Viernes 16) - $100'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA18' = {
     'Obra' : 'Nada'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -180,7 +180,7 @@ var dataObras = [
     'Precio': '$30 (solo los jueves) - $150'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA19' = {
     'Obra' : 'Los Empeños de una Casa'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
@@ -190,7 +190,7 @@ var dataObras = [
     'Precio': 'Gratis'
     'Reseñas' : ''
   },
-  obras = {
+  'OBRA20' = {
     'Obra' : 'La Verdad Sospechosa'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
