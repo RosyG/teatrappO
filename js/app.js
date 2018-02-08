@@ -8,13 +8,15 @@ $(document).ready(function(){
 
 	/* Función Splash */
 
-	 setTimeout(function() {
+	 /*setTimeout(function() {
     $('#splash').fadeOut(500);
     $('#mainview').show();
-    }, 1000);
+    }, 1000);*/
 
 	$('.slider').slider();
 	$(".button-collapse").sideNav();
 	$(".dropdown-button").dropdown();
 	$('.modal').modal();
+
 });
+
