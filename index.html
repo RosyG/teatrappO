@@ -102,27 +102,87 @@
   <div class="container">
     <div class="row">
       <div class="carousel">
-        <a onclick="getData(0)" class="carousel-item modal-trigger info-obra"><img src="assets/images/imagen-modal.jpg"></a>
-        <a onclick="getData(1)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
-        <a onclick="getData(2)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
-        <a onclick="getData(3)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
-        <a onclick="getData(4)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
+        <a onclick="getData(0)" class="carousel-item modal-trigger info-obra" href="#modal1"><img src="assets/images/meninas.jpg" height="250" width="250"></a>
+        <a onclick="getData(1)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="assets/images/barataria.jpg" height="250" width="250"></a>
+        <a onclick="getData(2)" class="carousel-item modal-trigger info-obra" href="#modal3"><img src="assets/images/sombras.jpg" height="250" width="250"></a>
+        <a onclick="getData(3)" class="carousel-item modal-trigger info-obra" href="#modal4"><img src="assets/images/frida.jpg" height="250" width="250"></a>
+        <a onclick="getData(4)" class="carousel-item modal-trigger info-obra" href="#modal5"><img src="assets/images/solsticio.jpg" height="250" width="250"></a>
       </div>
     </div>
   </div>
-  <div id="modal2" class="modal modal2">
+<!-- Modal de primera obra -->
+
+  <div id="modal1" class="modal modal1">
     <div class="modal-content row">
-      <h4 class="center-align" id="obra"></h4>
-      <img id="img-obra" class="responsive-img" src="" alt="img-restaurant">
-      <p class="col s6" id="teatro"></p>
-      <p class="col s6" id="genero"></p>
-      <p class="col s6" id="horario"></p>
+      <h4 class="center-align" id="obra">Las Meninas</h4>
+      <p class="col s6" id="teatro">Foro: NH</p>
+      <p class="col s6" id="genero">Genero: Comedia</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$250 - $340</p>
     </div>
     <div class="modal-footer">
-      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Ver mapa</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.344992767441!2d-99.17664100256611!3d19.419479954620247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3692f2dc4f%3A0x67a7a44eeda10b94!2sHotel+NH+Collection+Mexico+City+Reforma!5e0!3m2!1ses-419!2smx!4v1518207708804" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+<!-- Modal de segunda obra -->
+  <div id="modal2" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Barataria</h4>
+      <p class="col s6" id="teatro">Foro: Foro Shakespeare</p>
+      <p class="col s6" id="genero">Genero: 'Comedia , Musical'</p>
+      <p class="col s6" id="horario">Miércoles 20:30 hrs. (a partir del 28 de enero)</p>
+      <p class="col s6" id="precio">259 - $370</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15051.348702226156!2d-99.176641!3d19.4194399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x564ffeb43e11176!2sForo+Shakespeare!5e0!3m2!1ses-419!2smx!4v1518207204076" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+<!-- Modal de 3ra obra -->
+  <div id="modal3" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">50 sombras de Fer</h4>
+      <p class="col s6" id="teatro">Foro: Bar El Vicio</p>
+      <p class="col s6" id="genero">Genero: Cabaret</p>
+      <p class="col s6" id="horario">Viernes 23:55 hrs. (del 2 al 23 de febrero)</p>
+      <p class="col s6" id="precio">$100 - $300</p>
+    </div>
+    <div class="modal-footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2698454834003!2d-99.16637818542813!3d19.35746504809568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d2a0667e27%3A0x7c213a717b95a758!2sTeatro+Bar+El+Vicio!5e0!3m2!1ses-419!2smx!4v1518207859939" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
     </div>
   </div>
 
+  <!-- Modal de 4ra obra -->
+  <div id="modal4" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Las Cartas de Frida</h4>
+      <p class="col s6" id="teatro">Foro: Hélenico</p>
+      <p class="col s6" id="genero">Genero: Contemporáneo</p>
+      <p class="col s6" id="horario">Martes y Miércoles 20:30 hrs. (del 6 de febrero al 14 de marzo)</p>
+      <p class="col s6" id="precio">$240 - $500</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.382882254133!2d-99.19214588542825!3d19.352567148250568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff61e0461ed%3A0xf8c7b630f4d17923!2sCentro+Cultural+Hel%C3%A9nico!5e0!3m2!1ses-419!2smx!4v1518208040702" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+
+    <!-- Modal de 4ra obra -->
+  <div id="modal5" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Solsticio de Invierno</h4>
+      <p class="col s6" id="teatro">Foro: Orientación</p>
+      <p class="col s6" id="genero">Genero: Drama</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$340 - $600</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120460.13878584008!2d-99.25999799446201!3d19.3527207802476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201fc0a8670b1%3A0xf139da2633b7f7c3!2sTeatro+Orientaci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1518208172718" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
 
 <!--Donde comento------------------------------------------------------------------------->
 <section class="conteiner">
