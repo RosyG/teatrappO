@@ -4,10 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Teatrappo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="icon" type="image/gif" href="assets/images/icon-meta.png" />
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+
 </head>
 <body>
 
@@ -20,47 +22,50 @@
   </main>
 -->
 <!-- Inicia Navbar -->
-    <nav>
-      <div class="nav-wrapper red darken-4">
-        <img  src="../assets/images/logo.png" style="width: 70px; margin-left: 20px;" alt="logo">
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-<!--Botón menú con dropdown y submenú-->
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
-            <ul id='dropdown1' class='dropdown-content'>
-              <li><a href="#!"></a></li> <!--Aquí va el nombre del usuario-->
-              <li class="divider"></li>
-              <li><a class="waves-effect waves-light  modal-trigger" href="#modal1">Calificar</a></li>
-              <li><a href="#!">Reportar</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">Salir</a></li>
-            </ul>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </section>
-
-    <!-- Modal de Calificar -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Calificar:</h4>
-        <form action="#">
-        <p>
-          <input name="group1" type="radio" id="test1" style="background-color:red;" />
-          <label for="test1">Obra de Teatro</label>
-        </p>
-        <p>
-          <input name="group1" type="radio" id="test2" />
-          <label for="test2">Teatro</label>
-        </p>
-
-      </form>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
-      </div>
-    </div>
+<main id="mainview">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+          <img  src="../assets/images/logo.png" style="width: 70px; margin-left: 20px;" alt="logo">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!--Botón menú con dropdown y submenú-->
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <ul id='dropdown1' class='dropdown-content'>
+                          <li><a href="#!"></a></li> <!--Aquí va el nombre del usuario-->
+                          <li class="divider"></li>
+                          <li><a class="waves-effect waves-light  modal-trigger" href="#review">Calificar</a></li>
+                          <li><a href="#!">Reportar</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#!">Salir</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </section>
+              <!-- Modal de Calificar -->
+              <div id="review" class="modal">
+                <div class="modal-content">
+                  <h4>Calificar:</h4>
+                  <form action="#">
+                  <p>
+                    <input name="group1" type="radio" id="test1" style="background-color:red;" />
+                    <label for="test1">Obra de Teatro</label>
+                  </p>
+                  <label for="textarea1">Reseña</label>
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <p>
+                    <input name="group1" type="radio" id="test2" />
+                    <label for="test2">Teatro</label>
+                  </p>
+                    <label for="textarea1">Comentar</label>
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+                </div>
+              </div>
 
 <!-- Sección del primer slider en full-screen -->
 <div class="container">
@@ -84,6 +89,7 @@
         <img src="../assets/images/panel-fitu.jpg"> <!-- random image -->
         <div class="caption right-align">
           <h3>FITU 2018</h3>
+          <p>No te pierdas el Festival Internacional de Teatro UNAM del 19 de FEB al 10 de ABR</p>
           <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
         </div>
       </li>
@@ -99,57 +105,195 @@
 </div>
 
   <!-- Sección de la seleccion de obras de teatro -->
+
   <div class="container">
     <div class="row">
       <div class="carousel">
-        <a class="carousel-item modal-trigger" href="#info-obra"><img src="../assets/images/barataria.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/solsticio.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/meninas.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/divina.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/frida.jpg"></a>
+        <a onclick="getData(0)" class="carousel-item modal-trigger info-obra" href="#modal1"><img src="../assets/images/meninas.jpg" height="250" width="250"></a>
+        <a onclick="getData(1)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="../assets/images/barataria.jpg" height="250" width="250"></a>
+        <a onclick="getData(2)" class="carousel-item modal-trigger info-obra" href="#modal3"><img src="../assets/images/sombras.jpg" height="250" width="250"></a>
+        <a onclick="getData(3)" class="carousel-item modal-trigger info-obra" href="#modal4"><img src="../assets/images/frida.jpg" height="250" width="250"></a>
+        <a onclick="getData(4)" class="carousel-item modal-trigger info-obra" href="#modal5"><img src="../assets/images/solsticio.jpg" height="250" width="250"></a>
+      </div>
     </div>
   </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="carousel">
-        <a class="carousel-item modal-trigger" href="#info-obra"><img src="../assets/images/juegos.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/mujeres.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/sombras.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/titiritero.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/fitu.jpg"></a>
+<!-- Modal de primera obra -->
+
+  <div id="modal1" class="modal modal1">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Las Meninas</h4>
+      <p class="col s6" id="teatro">Foro: NH</p>
+      <p class="col s6" id="genero">Genero: Comedia</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$250 - $340</p>
+    </div>
+    <div class="modal-footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.344992767441!2d-99.17664100256611!3d19.419479954620247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3692f2dc4f%3A0x67a7a44eeda10b94!2sHotel+NH+Collection+Mexico+City+Reforma!5e0!3m2!1ses-419!2smx!4v1518207708804" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="carousel">
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/rotterdam.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/luciernagas.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/corazon.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/desconfianza.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/automovil.jpg"></a>
+<!-- Modal de segunda obra -->
+  <div id="modal2" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Barataria</h4>
+      <p class="col s6" id="teatro">Foro: Foro Shakespeare</p>
+      <p class="col s6" id="genero">Genero: 'Comedia , Musical'</p>
+      <p class="col s6" id="horario">Miércoles 20:30 hrs. (a partir del 28 de enero)</p>
+      <p class="col s6" id="precio">259 - $370</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15051.348702226156!2d-99.176641!3d19.4194399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x564ffeb43e11176!2sForo+Shakespeare!5e0!3m2!1ses-419!2smx!4v1518207204076" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
   </div>
-</div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="carousel">
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/fracaso.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/quijote.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/nada.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/empeños.jpg"></a>
-      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/verdad.jpg"></a>
+<!-- Modal de 3ra obra -->
+  <div id="modal3" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">50 sombras de Fer</h4>
+      <p class="col s6" id="teatro">Foro: Bar El Vicio</p>
+      <p class="col s6" id="genero">Genero: Cabaret</p>
+      <p class="col s6" id="horario">Viernes 23:55 hrs. (del 2 al 23 de febrero)</p>
+      <p class="col s6" id="precio">$100 - $300</p>
+    </div>
+    <div class="modal-footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2698454834003!2d-99.16637818542813!3d19.35746504809568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d2a0667e27%3A0x7c213a717b95a758!2sTeatro+Bar+El+Vicio!5e0!3m2!1ses-419!2smx!4v1518207859939" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
   </div>
-</div>
+
+  <!-- Modal de 4ra obra -->
+  <div id="modal4" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Las Cartas de Frida</h4>
+      <p class="col s6" id="teatro">Foro: Hélenico</p>
+      <p class="col s6" id="genero">Genero: Contemporáneo</p>
+      <p class="col s6" id="horario">Martes y Miércoles 20:30 hrs. (del 6 de febrero al 14 de marzo)</p>
+      <p class="col s6" id="precio">$240 - $500</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.382882254133!2d-99.19214588542825!3d19.352567148250568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff61e0461ed%3A0xf8c7b630f4d17923!2sCentro+Cultural+Hel%C3%A9nico!5e0!3m2!1ses-419!2smx!4v1518208040702" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+
+    <!-- Modal de 4ra obra -->
+  <div id="modal5" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Solsticio de Invierno</h4>
+      <p class="col s6" id="teatro">Foro: Orientación</p>
+      <p class="col s6" id="genero">Genero: Drama</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$340 - $600</p>
+    </div>
+    <div class="modal-footer">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120460.13878584008!2d-99.25999799446201!3d19.3527207802476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201fc0a8670b1%3A0xf139da2633b7f7c3!2sTeatro+Orientaci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1518208172718" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+
+<!--Donde comento------------------------------------------------------------------------->
+<section class="conteiner">
+    <h1 id="welcome-user"></h1>
+    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
+    <button id="guardar">Guardar</button>
+    <div id="my-publications">
+    </div>
+</section>
+<!--Donde comento------------------------------------------------------------------------->
+<!--conteiner Notifications ------------------------------------------->
+<section id="container-notifications">
+  <h3>Aquí las nuevas publicaciones.</h3>
+=======
 </div>
 
+<!--Donde comento------------------------------------------------------------------------->
+
+<section class="conteiner">
+
+    <h1 id="welcome-user"></h1>
+    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
+    <button id="guardar">Guardar</button>
+
+    <div id="my-publications">
+
+    </div>
+
+</section>
+<!--Donde comento------------------------------------------------------------------------->
+
+<!--conteiner Notifications ------------------------------------------->
+<section id="container-notifications">
+  <h3>Aquí las nuevas publicaciones.</h3>
+
+
+  <div id="publications">
+  </div>
+</section>
+<!--conteiner Notifications ------------------------------------------->
+
+  
+<!-- Modal para calificar obras y agregar comentarios -->
+  <a class="waves-effect waves-light modal-trigger" href="#modal1"></a>
+
+  <!-- Estructura intenrna del modal de usuario -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Hola @usuario!</h4>
+      <ul class = "collapsible" data-collapsible = "accordion">
+         <li>
+            <div class = "collapsible-header">
+               <i class = "material-icons">star</i>Califica</div>
+            <div class = "collapsible-body"><p>
+               <form action="#">
+                  <p class="range-field">
+                    <input type="range" id="test5" min="0" max="100" />
+                  </p>
+                </form>
+            </p></div>
+         </li>
+
+         <li>
+            <div class = "collapsible-header">
+               <i class = "material-icons">short_text</i>Escribe tu reseña</div>
+            <div class = "collapsible-body"><p>
+               <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Cómo fue tu experiencia</label>
+                      </div>
+                      <div class="row right">
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </p></div>
+         </li>
+      </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Listo!</a>
+    </div>
+  </div>
+
+  <!-- Fin del modal para comentarios-->
+
+  <!--Imagen de prueba-->
+  <span class="modal-trigger modal-close" data-toggle="modal" href="#modal1">
+  </span>
   <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
   <!-- Modal Structure -->
   <div id="info-obra" class="modal">
     <div class="modal-content">
       <div class="title">
-        <h4 class="center-align"><strong></strong></h4>
+        <h4 class="center-align"><strong>Las Meninas</strong></h4>
       </div>
       <div class="map center-align">
         <iframe class="col lx12 col s12 img-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7262150197555!2d-99.17019851189744!3d19.4165162640089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4709285507%3A0xbbb2cd252c5b4946!2sPizza+del+Perro+Negro!5e0!3m2!1ses-419!2smx!4v1516498361384"
@@ -185,10 +329,27 @@
 
 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
-<script type="text/javascript" src="../js/login.js"></script>
+  <!--Agregando CDN de jQuery-->
+  <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!--Agregando Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+
+  <!--Agregando archivos locales de javascript-->
+  <script type="text/javascript" src="../js/credentials.js"></script>
+  <script type="text/javascript" src="../js/functionComments.js"></script>
+  <script type="text/javascript" src="../js/data.js"></script>
+  <script type="text/javascript" src="../js/data-obras.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+
+
 
 </body>
 </html>
