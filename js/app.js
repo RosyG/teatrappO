@@ -35,6 +35,7 @@
 	});
 
 
+/* Function para añadir datos a modales underconstruction */
 
 	  function getData (event){
 
@@ -50,7 +51,7 @@
   }
 }
 
-   getData();
+   getData(); // Doesn't Work
 
 
 /* Funciones Firebase / API */	

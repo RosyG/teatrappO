@@ -194,13 +194,5 @@ var obras = [
 ]
 
 
-    
-      
-         
-     
-
-
-
-console.log(obras);
 
 
