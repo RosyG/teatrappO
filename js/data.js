@@ -1,7 +1,7 @@
-var teatros = [
+var theater = [
     {
 		"name": "Foro Shakespeare",
-		"img": "assets/img/",
+		"img": "http://dummyimage.com/250x250",
         "address": "Zamora 7, Condesa, 06140 Ciudad de México, CDMX",
         "coordinates": {
             lng: 19.4194399,
@@ -10,7 +10,7 @@ var teatros = [
     },
     {
 		"name": "Orientacion",
-		"img": "assets/img/",
+		"img": "http://dummyimage.com/250x250",
         "address": "Paseo de la Reforma y Campo Marte, Paseo de la Reforma, Polanco V Sección, 11560 Ciudad de México, CDMX",
         "coordinates": {
             lng: -99.1954078,
@@ -18,80 +18,84 @@ var teatros = [
         }
     },
     {
-		"name": "Centro Cultural Carretera 15 Teatro",
-		"img": "assets/img/",
-        "address": "Colima 268, Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Mexicana",
-		"price": "$$$",
+		"name": "NH",
+		"img": "http://dummyimage.com/250x250",
+        "address": "Calle Liverpool 155, Juárez, 06600 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1640023,
-			lat: 19.4192023
+            lng: -99.166989,
+			lat: 19.4243557
         }
     },
     {
-		"name": "Centro Cultural el Foco",
-		"img": "assets/img/",
-        "address": "Orizaba 87, Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Hamburguesería",
-		"price": "$$$",
+		"name": "Hélenico",
+		"img": "http://dummyimage.com/250x250",
+        "address": "Av. Revolución 1500, Guadalupe Inn, 01020 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1611437,
-		    lat: 19.4193863
+            lng: -99.1921459,
+		    lat: 19.3525671
         }
     },
     {
-		"name": "Centro Cultural I",
-		"img": "assets/img/",
-        "address": "Orizaba s/n, Roma Norte, Roma Nte., 06700 Cuauhtémoc, CDMX",
-        "category": "Vegana",
-		"price": "$$",
+		"name": "Foro Lucerna",
+		"img": "http://dummyimage.com/250x250",
+        "address": "Calle Lucerna 64, Delegación Cuauhtémoc, Col. Juárez, 06600 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1610123,
-		    lat: 19.4197784
+            lng: -99.1589174,
+		    lat: 19.4299826
         }
     },
     {
-		"name": "Centro Cultural Roldán Sandoval",
-		"img": "assets/img/",
-        "address": "Orizaba y Colima, Roma Norte, Cuauhtémoc, 06700 Ciudad de México, D.F., Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Burritos",
-		"price": "$",
+		"name": "Bar El Vicio",
+		"img": "http://dummyimage.com/250x250",
+        "address": "Calle Madrid 13, Del Carmen, 04100 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1606958,
-		    lat: 19.41986
+            lng: -99.1663782,
+		    lat: 19.357465
 		}
-	}
+	},
     {
-        "name": "Centro Cultural Sylvia Pasquel",
-        "img": "assets/img/",
-        "address": "Orizaba y Colima, Roma Norte, Cuauhtémoc, 06700 Ciudad de México, D.F., Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Burritos",
-        "price": "$",
+        "name": "Centro Cultural Universitario",
+        "img": "http://dummyimage.com/250x250",
+        "address": "Av. Ricardo Flores Magón 1, Tlatelolco, 06995 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1606958,
-            lat: 19.41986
+            lng: -99.1721293,
+            lat: 19.4498291
         }
-    }
+    },
     {
-        "name": "Foro 37",
-        "img": "assets/img/",
-        "address": "Orizaba y Colima, Roma Norte, Cuauhtémoc, 06700 Ciudad de México, D.F., Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Burritos",
-        "price": "$",
+        "name": "Julio Prieto",
+        "img": "http://dummyimage.com/250x250",
+        "address": "Xola 809, Col del Valle Nte, 03100 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1606958,
-            lat: 19.41986
+            lng: -99.1633715,
+            lat: 19.3960374
         }
-    }
+    },
     {
-        "name": "Teatro Cabaret",
-        "img": "assets/img/",
-        "address": "Orizaba y Colima, Roma Norte, Cuauhtémoc, 06700 Ciudad de México, D.F., Roma Nte., 06700 Ciudad de México, CDMX",
-        "category": "Burritos",
-        "price": "$",
+        "name": "Foro de las Artes",
+        "img": "http://dummyimage.com/250x250",
+        "address": "Av. Río Churubusco 79, Country Club Churubusco, 04220 Ciudad de México, CDMX",
         "coordinates": {
-            lng: -99.1606958,
-            lat: 19.41986
+            lng: -99.1429351,
+            lat: 19.3564583
+        }
+    },
+     {
+        "name": "Salvador Novo",
+        "img": "http://dummyimage.com/250x250",
+        "address": "Av. Río Churubusco 79, Country Club Churubusco, 04220 Ciudad de México, CDMX, México",
+        "coordinates": {
+            lng: -99.139786,
+            lat: 19.360311
+        }
+    },
+     {
+        "name": "Santa Catarina",
+        "img": "http://dummyimage.com/250x250",
+        "address": "Jardín Sta Catarina 10, Santa Catarina, 04010 Ciudad de México, CDMX",
+        "coordinates": {
+            lng: -99.1711436,
+            lat: 19.3498174
         }
     }
 

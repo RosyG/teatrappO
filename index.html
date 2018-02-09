@@ -4,9 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Teatrappo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ <link rel="icon" type="image/gif" href="assets/images/icon-meta.png" />
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -23,66 +24,73 @@
 <main id="mainview">
       <section class="container-fluid">
         <div class="row">
-          <ul id="dropdown1" class="dropdown-content">
+          <ul id="dropdown1" class="dropdown-content d-n">
             <li><a href="#!">one</a></li>
             <li><a href="#!">two</a></li>
             <li class="divider"></li>
             <li><a href="#!">three</a></li>
           </ul>
 
-    <nav>
-      <div class="nav-wrapper red darken-4">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</section>
+          <nav>
+            <div class="nav-wrapper red darken-4">
+              <a id="d-b" href="#!" class="brand-logo">Logo</a>
+              <a class="btn-floating right btn-large waves-effect waves-light btn-login"><i class="material-icons">add</i></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse d-n"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down d-n">
+                <li><a href="sass.html">Inicio</a></li>
+                <li><a href="badges.html">Lorem</a></li>
+                <li><a href="collapsible.html">Usuario</a></li>
+                <li><a href="mobile.html">Contacto</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+              <ul class="side-nav d-n" id="mobile-demo">
+                <li><a href="sass.html">Inicio</a></li>
+                <li><a href="badges.html">Lorem</a></li>
+                <li><a href="collapsible.html">Perfil</a></li>
+                <li><a href="mobile.html">Contacto</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
 
 <!-- Sección del primer slider en full-screen -->
 <div class="container">
       <div class="slider">
     <ul class="slides">
       <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img src="#"> <!-- random image -->
         <div class="caption center-align">
+
+          <h3>Lorem!</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
           <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img src="#"> <!-- random image -->
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="#"> <!-- random image -->
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img src="#"> <!-- random image -->
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
         </div>
       </li>
     </ul>
@@ -94,6 +102,7 @@
   <div class="container">
     <div class="row">
       <div class="carousel">
+
         <a class="carousel-item modal-trigger" href="#info-obra"><img src="assets/images/imagen-modal.jpg"></a>
         <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
         <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
@@ -108,7 +117,7 @@
 <!-- Modal para calificar obras y agregar comentarios
   <a class="waves-effect waves-light modal-trigger" href="#modal1"></a>
 
-   Estructura intenrna del modal de usuario
+  <!- Estructura intenrna del modal de usuario
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="container">
@@ -200,10 +209,34 @@
 
 
 
+  <!--Agregando CDN de jQuery-->
+  <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!--Agregando Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDvVlOk19O1RVbXzoDKPLM31TuQc3L9LZM",
+      authDomain: "teatrappo.firebaseapp.com",
+      databaseURL: "https://teatrappo.firebaseio.com",
+      projectId: "teatrappo",
+      storageBucket: "",
+      messagingSenderId: "432411697892"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!--Agregando archivos locales de javascript-->
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
 
 
 </body>
