@@ -1,6 +1,8 @@
+alert ("Hola");
+
  //Es un array de objetos que contiene la data de las obras de teatro
 var dataObras = [
-  var obras = {
+   obras = {
     'Obra' : 'Barataria: Estado De México'
     'Map': '' //Aquí van las coordenadas
     'Ranking' : //Aquí van las estrellas
