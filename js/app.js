@@ -26,15 +26,17 @@
 		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
 		//$('.btn-login').click(peticion);
 		$('.btn-login').click(showHome,serviceGoogle);
-		$('').click()
+		//$('.btn-login').click(peticion);
+		paintTextPublication (); //Ejecutando función que pinta cada comentario hecho por los usuarios en el modal.
 
+/*
 		//mandando a llamar a la API con su url
 		var radius = 500;
 	    $ajax('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius='+radius+'&type=theatres&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ', function(result) {
 	        console.log(result);
 				});
 				//				https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ
-
+*/
 
 	});
 
@@ -81,7 +83,7 @@ function peticion () {
 */
 
 
-/* Funciones Firebase / API */	
+/* Funciones Firebase / API */
 
 function showHome () {
 	$('.d-n').show('slow'); //Muestra el menú
@@ -98,8 +100,6 @@ function serviceGoogle () {
 	console.log('hola');
   saveUs (result.user);//Guada la información del usuario de manera automatica.
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
-  //saveData (result.user);
-  //paintTextPublication (textPublication);//Ejecutando la función que pintará las publicationes guardadas en Firebase.
   });
 };
 

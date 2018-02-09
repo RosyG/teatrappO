@@ -112,6 +112,30 @@
   </div>
 </div>
 
+<!--Donde comento------------------------------------------------------------------------->
+
+<section class="conteiner">
+
+    <h1 id="welcome-user"></h1>
+    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
+    <button id="guardar">Guardar</button>
+
+    <div id="my-publications">
+
+    </div>
+
+</section>
+<!--Donde comento------------------------------------------------------------------------->
+
+<!--conteiner Notifications ------------------------------------------->
+<section id="container-notifications">
+  <h3>Aquí las nuevas publicaciones.</h3>
+
+  <div id="publications">
+  </div>
+</section>
+<!--conteiner Notifications ------------------------------------------->
+
 
 
 <!-- Modal para calificar obras y agregar comentarios -->
@@ -223,24 +247,14 @@
   <!--Agregando Firebase-->
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDvVlOk19O1RVbXzoDKPLM31TuQc3L9LZM",
-      authDomain: "teatrappo.firebaseapp.com",
-      databaseURL: "https://teatrappo.firebaseio.com",
-      projectId: "teatrappo",
-      storageBucket: "",
-      messagingSenderId: "432411697892"
-    };
-    firebase.initializeApp(config);
-  </script>
 
   <!--Agregando archivos locales de javascript-->
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/credentials.js"></script>
+  <script type="text/javascript" src="js/functionComments.js"></script>
   <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 
 
 </body>
 </html>
-
