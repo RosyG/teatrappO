@@ -102,22 +102,47 @@
   <div class="container">
     <div class="row">
       <div class="carousel">
-
-        <a class="carousel-item modal-trigger" href="#info-obra"><img src="assets/images/imagen-modal.jpg"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
-        <a class="carousel-item modal-trigger" href="#modal1"><img src="http://dummyimage.com/250x250"></a>
+        <a onclick="getData(0)" class="carousel-item modal-trigger info-obra"><img src="assets/images/imagen-modal.jpg"></a>
+        <a onclick="getData(1)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
+        <a onclick="getData(2)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
+        <a onclick="getData(3)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
+        <a onclick="getData(4)" class="carousel-item modal-trigger info-obra" href="#modal2"><img src="http://dummyimage.com/250x250"></a>
+      </div>
     </div>
   </div>
-</div>
+  <div id="modal2" class="modal modal2">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra"></h4>
+      <img id="img-obra" class="responsive-img" src="" alt="img-restaurant">
+      <p class="col s6" id="teatro"></p>
+      <p class="col s6" id="genero"></p>
+      <p class="col s6" id="horario"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Ver mapa</a>
+    </div>
+  </div>
 
-
-
-<!-- Modal para calificar obras y agregar comentarios
+<!--Donde comento------------------------------------------------------------------------->
+<section class="conteiner">
+    <h1 id="welcome-user"></h1>
+    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
+    <button id="guardar">Guardar</button>
+    <div id="my-publications">
+    </div>
+</section>
+<!--Donde comento------------------------------------------------------------------------->
+<!--conteiner Notifications ------------------------------------------->
+<section id="container-notifications">
+  <h3>Aquí las nuevas publicaciones.</h3>
+  <div id="publications">
+  </div>
+</section>
+<!--conteiner Notifications ------------------------------------------->
+<!-- Modal para calificar obras y agregar comentarios -->
   <a class="waves-effect waves-light modal-trigger" href="#modal1"></a>
 
-  <!- Estructura intenrna del modal de usuario
+  <!-- Estructura intenrna del modal de usuario -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="container">
@@ -163,7 +188,9 @@
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Listo!</a>
     </div>
-  </div> -->
+  </div>
+
+  <!-- Fin del modal para comentarios-->
 
   <!--Imagen de prueba-->
   <span class="modal-trigger modal-close" data-toggle="modal" href="#modal1">
@@ -221,22 +248,14 @@
   <!--Agregando Firebase-->
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDvVlOk19O1RVbXzoDKPLM31TuQc3L9LZM",
-      authDomain: "teatrappo.firebaseapp.com",
-      databaseURL: "https://teatrappo.firebaseio.com",
-      projectId: "teatrappo",
-      storageBucket: "",
-      messagingSenderId: "432411697892"
-    };
-    firebase.initializeApp(config);
-  </script>
 
   <!--Agregando archivos locales de javascript-->
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/credentials.js"></script>
+  <script type="text/javascript" src="js/functionComments.js"></script>
   <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/data-obras.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 
 
 </body>

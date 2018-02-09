@@ -1,4 +1,4 @@
-	//login, la var provider provera el servicio para logear.
+//login, la var provider provera el servicio para logear.
 	var provider = new firebase.auth.GoogleAuthProvider();
 	//Variable que maneja la base de datos de firebase.
 	var db = firebase.database();
@@ -22,16 +22,65 @@
 		$(".button-collapse").sideNav();
 		$(".dropdown-button").dropdown();
 		$('.modal').modal();
+		$('#info-obras').click(paintModal)
 
-		$('.btn-login').click(showHome,serviceGoogle); //Logea los datos que introduzca el usuario.
-		/*
+		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
+		//$('.btn-login').click(peticion);
+		$('.btn-login').click(showHome,serviceGoogle);
+		//$('.btn-login').click(peticion);
+		paintTextPublication (); //Ejecutando función que pinta cada comentario hecho por los usuarios en el modal.
+
+/*
+		//mandando a llamar a la API con su url
 		var radius = 500;
-	    $.ajax('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius='+radius+'&type=theatres&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ', function(result) {
+	    $ajax('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius='+radius+'&type=theatres&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ', function(result) {
 	        console.log(result);
 				});
 				//				https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ
-		*/
+*/
+
 	});
+
+
+function peticion () {
+	var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ';
+	var html = new XMLHttpRequest();
+
+	html.open('GET', url);
+	html.send();
+
+	html.onreadystatechange = function (e){
+		console.log('hora');
+		if (html.readyState == 4 && html.status == 200) {
+			console.log(html.response);
+			console.log('fd');
+		}
+	}
+}
+
+
+// Función para extraer data para imagenes carousel 
+
+function getData(numObra){
+    var dataObra = obras[numObra];
+    console.log(dataObra);
+    var nombreObra = dataObra.Obra; 
+    
+    }
+
+    function paintModal() {
+        var obra = $(this).obra('obra');
+        var photo = $(this).obra('photo');
+        var teatro = $(this).obra('teatro');
+        var genero = $(this).obra('genero');
+        $('#obra').text(obra);
+        $('#teatro').text(teatro);
+        $('#genero').text(genero);
+        $('#horario').text(horario);
+}
+
+
+/* Funciones Firebase / API */
 
 function showHome () {
 	$('.d-n').show('slow'); //Muestra el menú
@@ -45,11 +94,9 @@ function serviceGoogle () {
   .then(function(result) {
   //En este momento el us ya accedio.
   showHome (); //Se muestra la vista para usuarios logueados.
-
+	console.log('hola');
   saveUs (result.user);//Guada la información del usuario de manera automatica.
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
-  //saveData (result.user);
-  //paintTextPublication (textPublication);//Ejecutando la función que pintará las publicationes guardadas en Firebase.
   });
 };
 
