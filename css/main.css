@@ -37,3 +37,11 @@ body {
 .btn-login {
   background-color: #EA4335;
 }
+
+#map {
+    margin: 0 auto;
+    height: 200px;
+    width: 60%;
+    align-content: center;
+    margin-bottom: 20px;
+}
