@@ -1,4 +1,4 @@
-	//login, la var provider provera el servicio para logear.
+//login, la var provider provera el servicio para logear.
 	var provider = new firebase.auth.GoogleAuthProvider();
 	//Variable que maneja la base de datos de firebase.
 	var db = firebase.database();
@@ -22,6 +22,7 @@
 		$(".button-collapse").sideNav();
 		$(".dropdown-button").dropdown();
 		$('.modal').modal();
+		$('#info-obras').click(paintModal)
 
 		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
 		//$('.btn-login').click(peticion);
@@ -58,29 +59,26 @@ function peticion () {
 }
 
 
-/*
-		$('#img-obra').click(getData);
-	});
+// Función para extraer data para imagenes carousel 
 
+function getData(numObra){
+    var dataObra = obras[numObra];
+    console.log(dataObra);
+    var nombreObra = dataObra.Obra; 
+    
+    }
 
-/* Function para añadir datos a modales underconstruction */
-/*
-	  function getData (event){
-
-		var target = $(event.target);//Elemento
-		console.log(target.dataset);
-
-       var obras = obras[0]["obra"];
-       console.log(obras);
-
-    for ( var i = 0; i < obras.length; i++){
-      var obraName = obras[i].obra;
-      console.log(obraName);
-  }
+    function paintModal() {
+        var obra = $(this).obra('obra');
+        var photo = $(this).obra('photo');
+        var teatro = $(this).obra('teatro');
+        var genero = $(this).obra('genero');
+        $('#obra').text(obra);
+        $('#teatro').text(teatro);
+        $('#genero').text(genero);
+        $('#horario').text(horario);
 }
 
-   getData(); // Doesn't Work
-*/
 
 
 /* Funciones Firebase / API */

@@ -1,5 +1,51 @@
 var obras = [
     {
+        'obra': 'Barataria: Estado De México',
+        'photo': 'http://lorempixel.com/350/200/food/',
+        'map': '' , 
+        'ranking': '' ,
+        'teatro': 'Foro Shakespeare',
+        'genero': 'Comedia , Musical',
+        'horario': 'Miércoles 20:30 hrs. (a partir del 28 de enero)',
+        'precio': '$259 - $370',
+        'resenas': ''
+    },
+    {
+        'obra' : 'Solsticio de Invierno',
+        'photo': 'http://lorempixel.com/350/200/food/',
+        'map': '',
+        'ranking' : '',
+        'teatro' : 'Orientación',
+        'genero' : 'Drama',
+        'horario' : 'Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)',
+        'precio': '$150',
+        'resenas' : ''
+    },
+    {
+        'obra' : 'Las Meninas',
+        'photo': 'http://lorempixel.com/350/200/food/',
+        'map': '', //Aquí van las coordenadas
+        'ranking' : '', //Aquí van las estrellas
+        'teatro': 'NH',
+        'género': 'Comedia',
+        'horario' : 'Jueves 17:30 hrs.; Domingos 20:30 hrs. (del 4 al 15 de febrero) ',
+        'precio': '$250 - $350',
+        'resenas' : '',
+    },
+    {
+        'obra' : 'La Divina Ilusión',
+        'photo': 'http://lorempixel.com/350/200/food/',
+        'map': '' ,
+        'ranking' : '' ,
+        'teatro': 'Helénico',
+        'genero': 'Comedia',
+        'horario' : 'Lunes 20:00 hrs. (del 12 al 16 de abril)',
+        'precio': '$200 - $300',
+        'resenas' : ''
+    },
+    {
+        'Obra' : 'Las Cartas de Frida',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Obra': 'Barataria: Estado De México',
         'Map': '' , 
         'Ranking': '' ,
@@ -51,6 +97,7 @@ var obras = [
     },
     {
         'Obra' : 'EL juego que todos jugamos',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Foro Lucerna',
@@ -61,6 +108,7 @@ var obras = [
     },
     {
         'Obra' : 'Mujeres Poderosas. Ciclo de Monólogos',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'NH',
@@ -71,6 +119,7 @@ var obras = [
     },
     {
         'Obra' : '50 sombras de Fer',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' , //Aquí van las coordenadas
         'Ranking' : '',  //Aquí van las estrellas
         'Teatro': 'Bar El Vicio',
@@ -81,6 +130,7 @@ var obras = [
     },
     {
         'Obra' : 'Festival Internacional de Teatro Universitario (UNAM)',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' , //Aquí van las coordenadas
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Centro Cultural Universitario',
@@ -92,6 +142,7 @@ var obras = [
     },
     {
         'Obra' : 'Rotterdam',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Foro Shakespeare',
@@ -102,6 +153,7 @@ var obras = [
     },
     {
         'Obra' : 'El Corazón de la Materia',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Foro de las Artes',
@@ -111,7 +163,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra' : 'La Desconfianza',
+        'Obra' : 'La Desconfianza'
+        'photo': 'http://lorempixel.com/350/200/food/'
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Salvador Novo',
@@ -122,6 +175,7 @@ var obras = [
     },
     {
         'Obra' : 'El Automóvil Gris',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '', //Aquí van las coordenadas,
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Foro de las Artes',
@@ -132,6 +186,7 @@ var obras = [
     },
     {
         'Obra' : 'No soy un Fracaso',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Foro de las Artes',
@@ -142,6 +197,7 @@ var obras = [
     },
     {
         'Obra' : 'Quijote, vencedor de sí mismo',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Foro de las Artes',
@@ -152,6 +208,7 @@ var obras = [
     },
     {
         'Obra' : 'Nada',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Santa Catarina',
@@ -162,6 +219,7 @@ var obras = [
     },
     {
         'Obra' : 'Los Empeños de una Casa',
+        'photo': 'http://lorempixel.com/350/200/food/',
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Fuente del CCU',
@@ -171,7 +229,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra': 'La Verdad Sospechosa',
+        'Obra': 'La Verdad Sospechosa'
+        'photo': 'http://lorempixel.com/350/200/food/'
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Fuente del CCU',
@@ -181,7 +240,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra' : 'El Amor de las Luciernagas',
+        'Obra' : 'El Amor de las Luciernagas
+        'photo': 'http://lorempixel.com/350/200/food/
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Julio Prieto',
