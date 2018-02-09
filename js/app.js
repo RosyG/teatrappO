@@ -1,3 +1,53 @@
+
+$(document).ready(cargarPagina);
+
+function cargarPagina(){
+    obtenerUbicacion();
+    $(".carousel-item").click(cambiarUbicacion);
+}
+
+var obtenerUbicacion = function(e){
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(mostrarUbicacion);
+    } else {
+        alert("Actualiza tu navegador");
+    }
+};
+
+var mostrarUbicacion = function(posicion){
+    var coordinates = {
+        lat: posicion.coords.latitude,
+        lng: posicion.coords.longitude
+    };
+    mostrarMapa(coordinates);
+};
+
+function mostrarMapa(coordinates) {
+    var map = new google.maps.Map($("#map")[0],{
+        zoom: 18,
+        center: coordinates
+    });
+    var marker = new google.maps.Marker({
+      position: coordinates,
+      map: map
+    });
+}
+
+function cambiarUbicacion(){
+    var lat = $(this).data("lat");
+    var lng = $(this).data("lng");
+
+    var coordinates = {
+        lat: lat,
+        lng: lng
+    };
+
+    mostrarMapa(coordinates);
+}
+//Termina API GOOGLE
+
+
+
 //login, la var provider provera el servicio para logear.
 	var provider = new firebase.auth.GoogleAuthProvider();
 	//Variable que maneja la base de datos de firebase.
@@ -59,13 +109,13 @@ function peticion () {
 }
 
 
-// Función para extraer data para imagenes carousel 
+// Función para extraer data para imagenes carousel
 
 function getData(numObra){
     var dataObra = obras[numObra];
     console.log(dataObra);
-    var nombreObra = dataObra.Obra; 
-    
+    var nombreObra = dataObra.Obra;
+
     }
 
     function paintModal() {
