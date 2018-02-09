@@ -24,8 +24,10 @@ body {
 	max-width:initial;
 }
 
+
+
 .d-n {
-  display: none;
+  display: none; /*Aquí va en none*/
 }
 
 #d-b {

@@ -46,6 +46,47 @@ var obras = [
     {
         'Obra' : 'Las Cartas de Frida',
         'photo': 'http://lorempixel.com/350/200/food/',
+        'Obra': 'Barataria: Estado De México',
+        'Map': '' , 
+        'Ranking': '' ,
+        'Teatro': 'Foro Shakespeare',
+        'Género': 'Comedia , Musical',
+        'Horario': 'Miércoles 20:30 hrs. (a partir del 28 de enero)',
+        'Precio': '$259 - $370',
+        'Reseñas': ''
+    },
+    {
+        'Obra' : 'Solsticio de Invierno',
+        'Map': '',
+        'Ranking' : '',
+        'Teatro' : 'Orientación',
+        'Género' : 'Drama',
+        'Horario' : 'Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)',
+        'Precio': '$150',
+        'Reseñas' : ''
+    },
+    {
+        'Obra' : 'Las Meninas',
+        'Map': '', //Aquí van las coordenadas
+        'Ranking' : '', //Aquí van las estrellas
+        'Teatro': 'NH',
+        'Género': 'Comedia',
+        'Horario' : 'Jueves 17:30 hrs.; Domingos 20:30 hrs. (del 4 al 15 de febrero) ',
+        'Precio': '$250 - $350',
+        'Reseñas' : '',
+    },
+    {
+        'Obra' : 'La Divina Ilusión',
+        'Map': '' ,
+        'Ranking' : '' ,
+        'Teatro': 'Helénico',
+        'Género': 'Comedia',
+        'Horario' : 'Lunes 20:00 hrs. (del 12 al 16 de abril)',
+        'Precio': '$200 - $300',
+        'Reseñas' : ''
+    },
+    {
+        'Obra' : 'Las Cartas de Frida',
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Hélenico',
@@ -122,8 +163,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra' : 'La Desconfianza',
-        'photo': 'http://lorempixel.com/350/200/food/',
+        'Obra' : 'La Desconfianza'
+        'photo': 'http://lorempixel.com/350/200/food/'
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '', //Aquí van las estrellas
         'Teatro': 'Salvador Novo',
@@ -188,8 +229,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra': 'La Verdad Sospechosa',
-        'photo': 'http://lorempixel.com/350/200/food/',
+        'Obra': 'La Verdad Sospechosa'
+        'photo': 'http://lorempixel.com/350/200/food/'
         'Map': '', //Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Fuente del CCU',
@@ -199,8 +240,8 @@ var obras = [
         'Reseñas' : ''
     },
     {
-        'Obra' : 'El Amor de las Luciernagas',
-        'photo': 'http://lorempixel.com/350/200/food/',
+        'Obra' : 'El Amor de las Luciernagas
+        'photo': 'http://lorempixel.com/350/200/food/
         'Map': '' ,//Aquí van las coordenadas
         'Ranking' : '',//Aquí van las estrellas
         'Teatro': 'Julio Prieto',

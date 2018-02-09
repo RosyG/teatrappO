@@ -62,4 +62,6 @@ function createElemen (texto) {
   $containerText.append(textUs);
 
   $('#publications').prepend($containerText);
+
 }
+
