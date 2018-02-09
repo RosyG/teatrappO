@@ -23,20 +23,46 @@
 		$(".dropdown-button").dropdown();
 		$('.modal').modal();
 
-		$('.btn-login').click(showHome,serviceGoogle); //Logea los datos que introduzca el usuario.
-		/*
+		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
+		//$('.btn-login').click(peticion);
+		$('.btn-login').click(showHome,serviceGoogle);
+		$('').click()
+
+		//mandando a llamar a la API con su url
 		var radius = 500;
-	    $.ajax('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius='+radius+'&type=theatres&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ', function(result) {
+	    $ajax('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius='+radius+'&type=theatres&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ', function(result) {
 	        console.log(result);
 				});
 				//				https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ
-		*/
+
+
+	});
+
+
+function peticion () {
+	var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ';
+	var html = new XMLHttpRequest();
+
+	html.open('GET', url);
+	html.send();
+
+	html.onreadystatechange = function (e){
+		console.log('hora');
+		if (html.readyState == 4 && html.status == 200) {
+			console.log(html.response);
+			console.log('fd');
+		}
+	}
+}
+
+
+/*
 		$('#img-obra').click(getData);
 	});
 
 
 /* Function para añadir datos a modales underconstruction */
-
+/*
 	  function getData (event){
 
 		var target = $(event.target);//Elemento
@@ -52,6 +78,7 @@
 }
 
    getData(); // Doesn't Work
+*/
 
 
 /* Funciones Firebase / API */	
@@ -68,7 +95,7 @@ function serviceGoogle () {
   .then(function(result) {
   //En este momento el us ya accedio.
   showHome (); //Se muestra la vista para usuarios logueados.
-
+	console.log('hola');
   saveUs (result.user);//Guada la información del usuario de manera automatica.
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
   //saveData (result.user);
