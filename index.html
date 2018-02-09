@@ -34,7 +34,7 @@
           <nav>
             <div class="nav-wrapper red darken-4">
               <a id="d-b" href="#!" class="brand-logo"><img  src="assets/images/logo.png" style="width: 70px; margin-left: 20px;" alt="logo"></a>
-              <a class="btn-floating right btn-large waves-effect waves-light btn-login"><i class="material-icons">add</i></a>
+              <a href="views/login.html" class="btn-floating right btn-large waves-effect waves-light btn-login"><i class="material-icons">add</i></a>
               <a href="#" data-activates="mobile-demo" class="button-collapse d-n"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down d-n">
                 <li><a href="sass.html">Inicio</a></li>
@@ -105,6 +105,53 @@
       </div>
     </div>
   </div>
+
+<!-- kartea carousel -->
+    <div class="container">
+    <div class="row">
+      <div class="carousel">
+        <a onclick="getData(0)" class="carousel-item modal-trigger info-obra" href="#modal6"><img src="assets/images/meninas.jpg" height="250" width="250"></a>
+        <a onclick="getData(1)" class="carousel-item modal-trigger info-obra" href="#modal7"><img src="assets/images/barataria.jpg" height="250" width="250"></a>
+        <a onclick="getData(2)" class="carousel-item modal-trigger info-obra" href="#modal8"><img src="assets/images/sombras.jpg" height="250" width="250"></a>
+        <a onclick="getData(3)" class="carousel-item modal-trigger info-obra" href="#modal9"><img src="assets/images/frida.jpg" height="250" width="250"></a>
+        <a onclick="getData(4)" class="carousel-item modal-trigger info-obra" href="#modal10"><img src="assets/images/solsticio.jpg" height="250" width="250"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- primer modal kartea -->
+
+    <div id="modal6" class="modal modal1">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Las Meninas</h4>
+      <p class="col s6" id="teatro">Foro: NH</p>
+      <p class="col s6" id="genero">Genero: Comedia</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$250 - $340</p>
+    </div>
+    <div class="modal-footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.344992767441!2d-99.17664100256611!3d19.419479954620247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3692f2dc4f%3A0x67a7a44eeda10b94!2sHotel+NH+Collection+Mexico+City+Reforma!5e0!3m2!1ses-419!2smx!4v1518207708804" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+
+  <!-- segundo modal kartea -->
+
+    <div id="modal7" class="modal modal1">
+    <div class="modal-content row">
+      <h4 class="center-align" id="obra">Las Meninas</h4>
+      <p class="col s6" id="teatro">Foro: NH</p>
+      <p class="col s6" id="genero">Genero: Comedia</p>
+      <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
+      <p class="col s6" id="precio">$250 - $340</p>
+    </div>
+    <div class="modal-footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.344992767441!2d-99.17664100256611!3d19.419479954620247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3692f2dc4f%3A0x67a7a44eeda10b94!2sHotel+NH+Collection+Mexico+City+Reforma!5e0!3m2!1ses-419!2smx!4v1518207708804" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
+    </div>
+  </div>
+
+
 <!-- Modal de primera obra -->
 
   <div id="modal1" class="modal modal1">
