@@ -31,7 +31,30 @@
 				});
 				//				https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=19.4205122,-99.165445&radius=500&type=theater&key=AIzaSyAXmrdzIGK4VsJte56Zd9lX6Eawye9mnWQ
 		*/
+		$('#img-obra').click(getData);
 	});
+
+
+/* Function para añadir datos a modales underconstruction */
+
+	  function getData (event){
+
+		var target = $(event.target);//Elemento
+		console.log(target.dataset);
+
+       var obras = obras[0]["obra"];
+       console.log(obras);
+
+    for ( var i = 0; i < obras.length; i++){
+      var obraName = obras[i].obra;
+      console.log(obraName);
+  }
+}
+
+   getData(); // Doesn't Work
+
+
+/* Funciones Firebase / API */	
 
 function showHome () {
 	$('.d-n').show('slow'); //Muestra el menú
