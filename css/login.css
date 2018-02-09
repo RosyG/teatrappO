@@ -1,0 +1,45 @@
+body {
+    background: #000;
+    font-family: 'Muli', sans-serif;
+
+}
+
+
+.slider .indicators .indicator-item.active {
+   background-color: red;
+}
+
+
+.container {
+	width: 100%;
+	max-width:initial;
+  background-position: bottom;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: black;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+element.style {
+    width: 107.328px;
+    position: absolute;
+    top: 10px;
+    left: 1218.67px;
+    display: block;
+    opacity: 1;
+}
+
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: red;
+  }
+
+
+materialize.min.css:13
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid red;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teatrappo</title>
+<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+
+ <!-- <main id="splash">
+    <section class="row">
+       <div class="col sm 12">
+         <img src="assets/images/teatro" alt="">
+       </div>
+    </section>
+  </main>
+-->
+<!-- Inicia Navbar -->
+    <nav>
+      <div class="nav-wrapper red darken-4">
+        <img  src="../assets/images/logo.png" style="width: 70px; margin-left: 20px;" alt="logo">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+<!--Botón menú con dropdown y submenú-->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!"></a></li> <!--Aquí va el nombre del usuario-->
+              <li class="divider"></li>
+              <li><a class="waves-effect waves-light  modal-trigger" href="#modal1">Calificar</a></li>
+              <li><a href="#!">Reportar</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Salir</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+    <!-- Modal de Calificar -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Calificar:</h4>
+        <form action="#">
+        <p>
+          <input name="group1" type="radio" id="test1" style="background-color:red;" />
+          <label for="test1">Obra de Teatro</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test2" />
+          <label for="test2">Teatro</label>
+        </p>
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+      </div>
+    </div>
+
+<!-- Sección del primer slider en full-screen -->
+<div class="container">
+      <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="../assets/images/panel-divina.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>La Divina Ilusión</h3>
+          <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+        </div>
+      </li>
+      <li>
+        <img src="../assets/images/panel-corazon.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>El corazón de la Materia</h3>
+          <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+        </div>
+      </li>
+      <li>
+        <img src="../assets/images/panel-fitu.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>FITU 2018</h3>
+          <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+        </div>
+      </li>
+      <li>
+        <img src="../assets/images/panel-quijote.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Quijote, vencedor de sí mismo</h3>
+          <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Sección de la seleccion de obras de teatro -->
+  <div class="container">
+    <div class="row">
+      <div class="carousel">
+        <a class="carousel-item modal-trigger" href="#info-obra"><img src="../assets/images/barataria.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/solsticio.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/meninas.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/divina.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/frida.jpg"></a>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="carousel">
+        <a class="carousel-item modal-trigger" href="#info-obra"><img src="../assets/images/juegos.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/mujeres.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/sombras.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/titiritero.jpg"></a>
+        <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/fitu.jpg"></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/rotterdam.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/luciernagas.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/corazon.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/desconfianza.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/automovil.jpg"></a>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="carousel">
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/fracaso.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/quijote.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/nada.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/empeños.jpg"></a>
+      <a class="carousel-item modal-trigger" href="#modal1"><img src="../assets/images/verdad.jpg"></a>
+  </div>
+</div>
+</div>
+
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+  <!-- Modal Structure -->
+  <div id="info-obra" class="modal">
+    <div class="modal-content">
+      <div class="title">
+        <h4 class="center-align"><strong></strong></h4>
+      </div>
+      <div class="map center-align">
+        <iframe class="col lx12 col s12 img-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7262150197555!2d-99.17019851189744!3d19.4165162640089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4709285507%3A0xbbb2cd252c5b4946!2sPizza+del+Perro+Negro!5e0!3m2!1ses-419!2smx!4v1516498361384"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <!--Dummy: Ranking starts-->
+      <div class="right-align">
+        <div class="ec-stars-wrapper">
+          <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+          <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+          <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+          <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+          <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+        </div>
+      </div>
+
+      <div class="left-align">
+        <p><strong>Género:</strong> Comedia</p>
+        <p><strong>Horario:</strong> Domingo 4 y 11, 13:30 y 17:30 horas; Jueves 8 y 15, 20:30 horas</p>
+        <p><strong>Precio:</strong> $250 - $350</p>
+      </div>
+    <!--Dummy: Reseñas-->
+      <div class="reseñas">
+        <h6><strong>Reseñas</strong></h6>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><hr>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><hr>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+
+</body>
+</html>
