@@ -1,3 +1,5 @@
+alert ("Hola");
+
  //Es un array de objetos que contiene la data de las obras de teatro
 var dataObras = [
   'OBRA2' = {
