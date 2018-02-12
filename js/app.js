@@ -71,7 +71,8 @@ function cambiarUbicacion(){
 		$(".button-collapse").sideNav();
 		$(".dropdown-button").dropdown();
 		$('.modal').modal();
-		$('#info-obras').click(paintModal)
+		$('#info-obras').click(paintModal);
+		$('select').material_select();
 
 		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
 		//$('.btn-login').click(peticion);
