@@ -54,3 +54,10 @@ body {
     align-content: center;
     margin-bottom: 20px;
 }
+
+/* My post contenedor */
+
+.send-post {
+  margin-top: 5px;
+  padding: 16px 24px;
+}
