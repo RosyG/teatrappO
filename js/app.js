@@ -81,7 +81,7 @@ function cambiarUbicacion(){
 
 		//Guardando datos en Firebase cuando se da click en Guardar.
 	  $('#send').click(saveText);//Guarda en Firebase las nuevas actualizaciones.
-	  $('#textAreaReseña').keyup(disabledSend);//Función que verifica que no se guarden o envien campos vacios.
+	  $('#text-review').keyup(disabledSend);//Función que verifica que no se guarden o envien campos vacios.
 		//db.ref('review-posts').on('child_added', messageAutomatic); //Añadiendo mensaje de manera autómatica.
 
 /*

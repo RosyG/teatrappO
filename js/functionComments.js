@@ -10,19 +10,19 @@
   //Función que añade las nuevas publicaciones de manera automatica.
   function messageAutomatic () {
 
-    var message = $('#textAreaReseña').val();
+    var message = $('#text-review').val();
     db.ref('my-post').push ({
       message:message
       //Añadiendo el nombre message como key.
     })
-    $('#my-post').prepend('<p>' + message + '<p /><br>' );//Añadiendo alcontenedor que tienes las reseñas que se escriben en el momento.
+    $('#my-post').prepend('<p>' + message + '<p /><hr><br>' ).addClass("card blue-white send-post");//Añadiendo alcontenedor que tienes las reseñas que se escriben en el momento.
   }
 
 
   //Función que guarda datos al hacer click en send.
   function saveText () {
     messageAutomatic();//Función que pinta las reseñas que se escriben en el momento, se muestran en el modal.
-    var textArea = $('#textAreaReseña').val();
+    var textArea = $('#text-review').val();
     firebase.database().ref('review-posts')
       .push(textArea);//Añadiendo la publicación en la rama 'publications-Reseña'.
 
@@ -31,9 +31,9 @@
     cleanText ();
   }
 
-  //Función que limpia el campo del textAreaReseña.
+  //Función que limpia el campo del text-review.
   function cleanText () {
-    $('#textAreaReseña').val(' ');//limpiando el campo del textAreaReseña.
+    $('#text-review').val(' ');//limpiando el campo del text-review.
   }
 
 
@@ -70,7 +70,7 @@ function createElemen (texto) {
 
 //Función que deshabilita el botón si se envía el campo vacío.
 function disabledSend () {
-  var textArea = $('#textAreaReseña').val();
+  var textArea = $('#text-review').val();
   var bottomSend = $('#send');//Lamando al botón que guarda los post y los publica.
   if (textArea == '') {
     bottomSend.attr("disabled", true);/*Botón deshabilitado*/
