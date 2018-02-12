@@ -145,8 +145,9 @@ function serviceGoogle () {
   .then(function(result) {
   //En este momento el us ya accedio.
   saveUs (result.user);//Guada la información del usuario de manera automatica.
-	console.log('paso po aqui');
+	console.log('paso por aqui');
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
+  window.location.href ='views/login.html';
 
 	//$('#name-user').text(result.user.displayName);//Añadiendo nombre de usuario para concatenar.
 	var nameUs = $('#name-user').text('YO');
@@ -167,6 +168,10 @@ function saveUs(user) {
   firebase.database().ref('usLogged/' + user.uid)//Se guarda en la rama que tiene una key igual al identificador unico UID del usuario.
     .set(InfUser);//set modifica a la llave especificada por el uid, push() solo agrega de nuevo.
 	console.log(InfUser);
+  //Guardando los datos en localStorage
+  localStorage.setItem('infUser',InfUser);
+  var objUser = localStorage.getItem('infUser');//Guardadndo la inf del us en la varible.
+  console.log(objUser);
 }
 
 //Función que pinya la información del usuario.
