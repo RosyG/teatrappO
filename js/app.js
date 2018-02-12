@@ -76,9 +76,16 @@ function cambiarUbicacion(){
 
 		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
 		//$('.btn-login').click(peticion);
-		$('.btn-login').click(showHome,serviceGoogle);
+		$('.btn-login').click(serviceGoogle);
 		//$('.btn-login').click(peticion);
 		paintTextPublication (); //Ejecutando función que pinta cada comentario hecho por los usuarios en el modal.
+
+		//Guardando datos en Firebase cuando se da click en Guardar.
+	  $('#send').click(saveText);//Guarda en Firebase las nuevas actualizaciones.
+	  $('#textAreaReseña').keyup(disabledSend);//Función que verifica que no se guarden o envien campos vacios.
+		//db.ref('review-posts').on('child_added', messageAutomatic); //Añadiendo mensaje de manera autómatica.
+
+
 
 /*
 		//mandando a llamar a la API con su url
@@ -133,25 +140,17 @@ function getData(numObra){
 
 /* Funciones Firebase / API */
 
-function showHome () {
-	$('.d-n').show('slow'); //Muestra el menú
-	$('.btn-login').hide(); //Oculta botón porque el us ya ingreso.
-
-}
-
 function serviceGoogle () {
   firebase.auth()//Mandando a llamar a Firebase.
   .signInWithPopup(provider)//Ventana popup para logearse con la var provider (con google).
   .then(function(result) {
   //En este momento el us ya accedio.
-  showHome (); //Se muestra la vista para usuarios logueados.
-	console.log('hola');
   saveUs (result.user);//Guada la información del usuario de manera automatica.
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
   });
 };
 
-//Función que guarda automaticamente.
+//Función que guarda los datos del us automaticamente.
 function saveUs(user) {
   var InfUser = {
     uid:user.uid,

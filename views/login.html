@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="icon" type="image/gif" href="assets/images/icon-meta.png" />
+<link rel="icon" type="image/gif" href="../assets/images/icon-meta.png" />
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 
 </head>
@@ -53,17 +53,15 @@
                     <label for="test1">Obra de Teatro</label>
                   </p>
                   <label for="textarea1">Reseña</label>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <p>
-                    <input name="group1" type="radio" id="test2" />
-                    <label for="test2">Teatro</label>
-                  </p>
-                    <label for="textarea1">Comentar</label>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                </form>
+                    <textarea  id="textAreaReseña" class="materialize-textarea"></textarea>
+                  </form>
                 </div>
                 <div class="modal-footer">
-                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+                  <a id="send" href="#!" class="modal-action waves-effect waves-green btn-flat" disabled>Send1</a>
+                </div>
+
+                <div id="my-post">
+
                 </div>
               </div>
 
@@ -286,47 +284,7 @@
     </div>
   </div>
 
-<!--Donde comento------------------------------------------------------------------------->
-<section class="conteiner">
-    <h1 id="welcome-user"></h1>
-    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
-    <button id="guardar">Guardar</button>
-    <div id="my-publications">
-    </div>
-</section>
-<!--Donde comento------------------------------------------------------------------------->
-<!--conteiner Notifications ------------------------------------------->
-<section id="container-notifications">
-  <h3>Aquí las nuevas publicaciones.</h3>
-=======
-</div>
 
-<!--Donde comento------------------------------------------------------------------------->
-
-<section class="conteiner">
-
-    <h1 id="welcome-user"></h1>
-    <textarea id="text-area" placeholder="Escribenos tu comentario" name="text" rows="7"></textarea>
-    <button id="guardar">Guardar</button>
-
-    <div id="my-publications">
-
-    </div>
-
-</section>
-<!--Donde comento------------------------------------------------------------------------->
-
-<!--conteiner Notifications ------------------------------------------->
-<section id="container-notifications">
-  <h3>Aquí las nuevas publicaciones.</h3>
-
-
-  <div id="publications">
-  </div>
-</section>
-<!--conteiner Notifications ------------------------------------------->
-
-  
 <!-- Modal para calificar obras y agregar comentarios -->
   <a class="waves-effect waves-light modal-trigger" href="#modal1"></a>
 
