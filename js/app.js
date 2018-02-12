@@ -147,7 +147,6 @@ function serviceGoogle () {
   saveUs (result.user);//Guada la información del usuario de manera automatica.
 	console.log('paso por aqui');
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
-  window.location.href ='views/login.html';
 
 	//$('#name-user').text(result.user.displayName);//Añadiendo nombre de usuario para concatenar.
 	var nameUs = $('#name-user').text('YO');
@@ -159,19 +158,20 @@ function serviceGoogle () {
 
 //Función que guarda los datos del us automaticamente.
 function saveUs(user) {
-  var InfUser = {
+  var infUser = {
     uid:user.uid,
     name:user.displayName,
     email:user.email,
     photo:user.photoURL,
   }
   firebase.database().ref('usLogged/' + user.uid)//Se guarda en la rama que tiene una key igual al identificador unico UID del usuario.
-    .set(InfUser);//set modifica a la llave especificada por el uid, push() solo agrega de nuevo.
-	console.log(InfUser);
-  //Guardando los datos en localStorage
-  localStorage.setItem('infUser',InfUser);
-  var objUser = localStorage.getItem('infUser');//Guardadndo la inf del us en la varible.
-  console.log(objUser);
+    .set(infUser);//set modifica a la llave especificada por el uid, push() solo agrega de nuevo.
+	//Guardando los datos en localStorage
+  localStorage.setItem('name',infUser.name);
+  localStorage.setItem('imgUs',infUser.photo);
+
+  //var objUser = localStorage.getItem('infUser');//Guardadndo la inf del us en la varible.
+  window.location.href ='views/login.html';
 }
 
 //Función que pinya la información del usuario.
@@ -182,6 +182,6 @@ function paintProfile (user) {
   var email = user.email;
   var uid= user.uid;
   /*$('.bg-perfil').append("<img id='img-perfil'  class = 'img-us' src = '"+imgUser+"' />");
-	$('#name').text(nameUser);
+	$('#name-user').text(nameUser);
   $('#email').text(email);*/
 }

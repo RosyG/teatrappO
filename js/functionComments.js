@@ -1,3 +1,13 @@
+  console.log('login');
+  var nameUser = localStorage.getItem('name');//Guardadndo la inf del us en la varible.
+  console.log(nameUser);
+  $('#name-user').text('¡Hola!  ' + nameUser);
+
+  var imgUs = localStorage.getItem('imgUs');//Guardadndo la inf del us en la varible.
+  console.log(imgUs);
+  $('#photo-user').append("<img id='img-perfil'  class = 'img-us' src = '"+imgUs+"' />");
+  //$('#photo-user').text(imgUs);
+
   //Variable que maneja la base de datos de firebase.
   var db = firebase.database();
 

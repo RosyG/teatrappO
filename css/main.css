@@ -62,3 +62,18 @@ body {
   margin-top: 5px;
   padding: 16px 24px;
 }
+
+/*Estilos de los datos del usuario*/
+#name-user {
+  font-size: 2em;
+  color: #26a69a;
+  line-height: 22px;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+#img-perfil {
+  border-radius: 50vw;
+  float: right;
+  width: 12%;
+}
