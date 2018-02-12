@@ -9,3 +9,20 @@
   };
 
   firebase.initializeApp(config);
+
+//Función que cierra sesión y direcciona a la página principal.
+$('.out-session').click(function(e) {
+    e.preventDefault();
+
+    firebase
+      .auth()
+      .signOut()
+      .then(function() {
+        // Sign-out successful.
+        window.location.href = '../index.html';//Direccionando al us a la página principal.
+        console.log('salir');
+      })
+      .catch(function(error) {
+        // An error happened.
+      });
+  });
