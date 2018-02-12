@@ -25,7 +25,6 @@ body {
 }
 
 
-
 .d-n {
   display: none; /*Aquí va en none*/
 }
@@ -35,7 +34,10 @@ body {
 }
 
 .btn-login {
-  background-color: #EA4335;
+  height: 3em;
+  background-color: #F22A00;
+  border-radius: 2em;
+  margin-top: 1em;
 }
 
 .map {

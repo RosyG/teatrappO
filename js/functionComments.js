@@ -1,51 +1,53 @@
   //Variable que maneja la base de datos de firebase.
   var db = firebase.database();
-  //Guardando datos en Firebase cuando se da click en Guardar.
-  $('#guardar').click(saveText);//Guarda en Firebase las nuevas actualizaciones.
 
-  db.ref('publications').on('child_added', messageAutomatic); //Añadiendo mensaje de manera autómatica.
+  //Muestra llas reseñas en el modal que le corresponde, según la obra que se va a consultar.
+   //$('.notification').click(paintTextPublication);//Muestra las notificaciones recientes
+
+  //db.ref('review-posts').on('child_added', messageAutomatic); //Añadiendo mensaje de manera autómatica.
 
 
   //Función que añade las nuevas publicaciones de manera automatica.
   function messageAutomatic () {
 
-    var message = $('#text-area').val();
-    db.ref('myPublications').push ({
+    var message = $('#textAreaReseña').val();
+    db.ref('my-post').push ({
       message:message
       //Añadiendo el nombre message como key.
     })
-    $('#my-publications').prepend('<p>' + message + '<p /><br>' );
+    $('#my-post').prepend('<p>' + message + '<p /><br>' );//Añadiendo alcontenedor que tienes las reseñas que se escriben en el momento.
   }
 
 
-  //Función que guarda datos al hacer click en guardar.
+  //Función que guarda datos al hacer click en send.
   function saveText () {
-    var textArea = $('#text-area').val();
-    firebase.database().ref('publications')
-      .push(textArea)//Añadiendo la publicación en la rama 'publications'.
+    messageAutomatic();//Función que pinta las reseñas que se escriben en el momento, se muestran en el modal.
+    var textArea = $('#textAreaReseña').val();
+    firebase.database().ref('review-posts')
+      .push(textArea);//Añadiendo la publicación en la rama 'publications-Reseña'.
 
   //  $('#notification').click(paintTextPublication (textArea));//Ejecutando la función que pintará las publicationes guardadas en Firebase.
     cleanText ();
   }
 
-  //Función que limpia el campo del text área.
+  //Función que limpia el campo del textAreaReseña.
   function cleanText () {
-    $('#text-area').val(' ');//limpiando el campo del text área.
+    $('#textAreaReseña').val(' ');//limpiando el campo del textAreaReseña.
   }
 
 
   ///----------publicación de las actividades del usuario.----------
 function paintTextPublication () {
-  
+
   //Función que publica en la zona de las publicaciones de los usuarios.
-  var database1 = firebase.database().ref("publications").once("value").then(function(snapshot){
+  var database1 = firebase.database().ref("review-posts").once("value").then(function(snapshot){
   var obj = snapshot.val()//Se obtiene el valor del objeto snapshot, el que contiene las keys con sus valores, los valores son las publicaciones que todos los usuarios han escrito, ie, las nuevas noticias.
-  $('#publications').empty();//Borra las actualizaciones que ya fueron pintadas para que no se sobre escriba y existan repeticiones.
+  //$('#publicationsReseña') es el contenedo de las reseñas de acuerdo a la obra que se está consultando.
+  $('#all-post').empty();//Borra las actualizaciones que ya fueron pintadas para que no se sobre escriba y existan repeticiones.
 
   for (var key in obj) {
       createElemen (obj[key]);//Mandando a pintar cada elemento que contiene la sección de las publicaciones.
-      console.log(obj[key]);
-    }
+      }
   });
 
 }//Fin de paintTextPublication.
@@ -61,7 +63,16 @@ function createElemen (texto) {
 
   $containerText.append(textUs);
 
-  $('#publications').prepend($containerText);
+  $('#all-post').prepend($containerText);
 
 }
 
+function disabledSend () {
+  var textArea = $('#textAreaReseña').val();
+  var bottomSend = $('#send');//Lamando al botón que guarda los post y los publica.
+  if (textArea == '') {
+    bottomSend.attr("disabled", true);/*Botón deshabilitado*/
+    } else {
+      bottomSend.attr("disabled", false);/*Botón habilitado*/
+  }
+}
