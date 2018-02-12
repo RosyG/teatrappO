@@ -26,7 +26,8 @@
     firebase.database().ref('review-posts')
       .push(textArea);//Añadiendo la publicación en la rama 'publications-Reseña'.
 
-  //  $('#notification').click(paintTextPublication (textArea));//Ejecutando la función que pintará las publicationes guardadas en Firebase.
+    paintTextPublication(); //Pintnado las últimas reseñas hecho en el modal que permite escribir.
+  //$('#notification').click(paintTextPublication (textArea));//Ejecutando la función que pintará las publicationes guardadas en Firebase.
     cleanText ();
   }
 
@@ -67,6 +68,7 @@ function createElemen (texto) {
 
 }
 
+//Función que deshabilita el botón si se envía el campo vacío.
 function disabledSend () {
   var textArea = $('#textAreaReseña').val();
   var bottomSend = $('#send');//Lamando al botón que guarda los post y los publica.

@@ -29,9 +29,9 @@
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <!--Botón menú con dropdown y submenú-->
-                      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
                         <ul id='dropdown1' class='dropdown-content'>
-                          <li><a href="#!"></a></li> <!--Aquí va el nombre del usuario-->
+                          <li id="name-user">lo</li> <!--Aquí va el nombre del usuario-->
                           <li class="divider"></li>
                           <li><a class="waves-effect waves-light  modal-trigger" href="#review">Calificar</a></li>
                           <li><a href="#!">Reportar</a></li>
@@ -57,7 +57,7 @@
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <a id="send" href="#!" class="modal-action waves-effect waves-green btn-flat" disabled>Send1</a>
+                  <a id="send" href="#!" class="modal-action waves-effect waves-green btn-flat" disabled>Send</a>
                 </div>
 
                 <div id="my-post">
@@ -218,6 +218,9 @@
       <p class="col s6" id="genero">Genero: Comedia</p>
       <p class="col s6" id="horario">Lunes y Martes 20:00 hrs. (del 08 de enero al 13 de febrero)</p>
       <p class="col s6" id="precio">$250 - $340</p>
+      <div id="all-post">
+
+      </div>
     </div>
     <div class="modal-footer">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.344992767441!2d-99.17664100256611!3d19.419479954620247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3692f2dc4f%3A0x67a7a44eeda10b94!2sHotel+NH+Collection+Mexico+City+Reforma!5e0!3m2!1ses-419!2smx!4v1518207708804" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -269,7 +272,7 @@
     </div>
   </div>
 
-    <!-- Modal de 4ra obra -->
+    <!-- Modal de 5ra obra -->
   <div id="modal5" class="modal modal2">
     <div class="modal-content row">
       <h4 class="center-align" id="obra">Solsticio de Invierno</h4>
@@ -283,6 +286,13 @@
       <a href="#map" class="modal-action modal-close waves-effect waves-green btn-flat">Haz una reseña!</a>
     </div>
   </div>
+
+    <!-- API GOOGLE-->
+  <div class="container">
+     <h3 class="text-map"> ¡Aquí está tu ubicación!</h3>
+     <div id="map"></div>
+  </div>
+
 
 
 <!-- Modal para calificar obras y agregar comentarios -->
@@ -394,6 +404,13 @@
   <!--Agregando Firebase-->
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+
+
+    <!-- agregando API google de geolocalización-->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLOyQIOE-32MJ21Jicfx7lLRMMl1wYYwA"
+    ></script>
+
 
   <!--Agregando archivos locales de javascript-->
   <script type="text/javascript" src="../js/credentials.js"></script>

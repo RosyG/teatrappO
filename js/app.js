@@ -1,4 +1,3 @@
-
 $(document).ready(cargarPagina);
 
 function cargarPagina(){
@@ -76,7 +75,7 @@ function cambiarUbicacion(){
 
 		//$('.btn-login').click(showHome,serviceGoogle,peticion); //Logea los datos que introduzca el usuario.
 		//$('.btn-login').click(peticion);
-		$('.btn-login').click(serviceGoogle);
+		$('#btn-login').click(serviceGoogle);
 		//$('.btn-login').click(peticion);
 		paintTextPublication (); //Ejecutando función que pinta cada comentario hecho por los usuarios en el modal.
 
@@ -84,8 +83,6 @@ function cambiarUbicacion(){
 	  $('#send').click(saveText);//Guarda en Firebase las nuevas actualizaciones.
 	  $('#textAreaReseña').keyup(disabledSend);//Función que verifica que no se guarden o envien campos vacios.
 		//db.ref('review-posts').on('child_added', messageAutomatic); //Añadiendo mensaje de manera autómatica.
-
-
 
 /*
 		//mandando a llamar a la API con su url
@@ -107,10 +104,10 @@ function peticion () {
 	html.send();
 
 	html.onreadystatechange = function (e){
-		console.log('hora');
+	//	console.log('hora');
 		if (html.readyState == 4 && html.status == 200) {
 			console.log(html.response);
-			console.log('fd');
+	//		console.log('fd');
 		}
 	}
 }
@@ -141,12 +138,20 @@ function getData(numObra){
 /* Funciones Firebase / API */
 
 function serviceGoogle () {
+	console.log('app.js');
   firebase.auth()//Mandando a llamar a Firebase.
   .signInWithPopup(provider)//Ventana popup para logearse con la var provider (con google).
   .then(function(result) {
   //En este momento el us ya accedio.
   saveUs (result.user);//Guada la información del usuario de manera automatica.
+	console.log('paso po aqui');
   paintProfile (result.user);//Pinta los datos del usuario en su perfil.
+
+	//$('#name-user').text(result.user.displayName);//Añadiendo nombre de usuario para concatenar.
+	var nameUs = $('#name-user').text('YO');
+	console.log(nameUs);
+
+
   });
 };
 
@@ -158,9 +163,9 @@ function saveUs(user) {
     email:user.email,
     photo:user.photoURL,
   }
-  console.log(InfUser);
   firebase.database().ref('usLogged/' + user.uid)//Se guarda en la rama que tiene una key igual al identificador unico UID del usuario.
     .set(InfUser);//set modifica a la llave especificada por el uid, push() solo agrega de nuevo.
+	console.log(InfUser);
 }
 
 //Función que pinya la información del usuario.
@@ -171,6 +176,6 @@ function paintProfile (user) {
   var email = user.email;
   var uid= user.uid;
   /*$('.bg-perfil').append("<img id='img-perfil'  class = 'img-us' src = '"+imgUser+"' />");
-  $('#name').text(nameUser);
+	$('#name').text(nameUser);
   $('#email').text(email);*/
 }
