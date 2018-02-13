@@ -114,24 +114,29 @@ function peticion () {
 }
 
 
-// Función para extraer data para imagenes carousel
+// Función para extraer data para imagenes carousel, dedicado a Rosy.
 
 function getData(numObra){
     var dataObra = obras[numObra];
     console.log(dataObra);
     var nombreObra = dataObra.Obra;
 
+    paintModal(dataObra)
+
     }
 
-    function paintModal() {
-        var obra = $(this).obra('obra');
-        var photo = $(this).obra('photo');
-        var teatro = $(this).obra('teatro');
-        var genero = $(this).obra('genero');
+    function paintModal(dataObra) {
+        var obra = dataObra['obra'];
+        console.log(obra);
+        var teatro = dataObra['teatro'];
+        var genero = dataObra['genero'];
+        var horario = dataObra['horario'];
+        var precio = dataObra['precio'];
         $('#obra').text(obra);
         $('#teatro').text(teatro);
         $('#genero').text(genero);
         $('#horario').text(horario);
+        $('#precio').text(precio);
 }
 
 
