@@ -4,21 +4,6 @@ body {
 
 }
 
-/* Estilos Splash */
-/*
-#splash {
-  background-color: red;
-  height: 100vh;
-
-}
-
-/* El main se pone como display none para que oculte el contenido pero lo muestre cuando termine el splash
-
-#mainview {
-	display: none;
-}
-*/
-
 .container {
 	width: 100%;
 	max-width:initial;
@@ -43,6 +28,8 @@ body {
 .map {
   margin-right: 100px;
 }
+
+
 .text-map {
   text-align: center;
   color: #f44336;
@@ -56,9 +43,15 @@ body {
     margin-bottom: 20px;
 }
 
-/* My post contenedor */
+/* review-post contenedor */
 
 .send-post {
   margin-top: 5px;
   padding: 16px 24px;
+}
+
+/*slide button*/
+
+.slider .indicators .indicator-item.active {
+    background-color: red;
 }
